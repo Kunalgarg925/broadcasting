@@ -20,10 +20,10 @@ FROM openjdk:21-slim
 WORKDIR /app
 
 # Copy the built jar file from the build stage to the current stage
-COPY --from=build /app/target/broadcasting-0.0.1-SNAPSHOT.jar broadcasting.jar
+COPY --from=build /app/target/broadcastingsystem-0.0.1-SNAPSHOT.jar broadcastingsystem.jar
 
 # Expose the application port
 EXPOSE 8080
 
 # Set the entrypoint to run the jar file
-ENTRYPOINT ["java", "-jar", "broadcasting.jar"]
+ENTRYPOINT ["java", "-jar", "broadcastingsystem.jar"]
