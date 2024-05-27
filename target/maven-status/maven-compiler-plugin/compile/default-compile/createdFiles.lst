@@ -1,0 +1,4 @@
+com\srvme\broadcastingsystem\BroadcastingsystemApplication.class
+com\srvme\broadcastingsystem\host\MessageController.class
+com\srvme\broadcastingsystem\config\WebSocketConfig.class
+com\srvme\broadcastingsystem\service\MyWebSocketHandler.class
