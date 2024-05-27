@@ -11,6 +11,7 @@ import org.springframework.web.socket.config.annotation.WebSocketHandlerRegistry
 public class WebSocketConfig implements WebSocketConfigurer {
     @Override
     public void registerWebSocketHandlers(WebSocketHandlerRegistry registry) {
+        System.out.println("websocket create karne ke liye to aaya");
         registry.addHandler(new MyWebSocketHandler(), "/ws")
                 .setAllowedOrigins("*"); // Allow all origins;
     }
