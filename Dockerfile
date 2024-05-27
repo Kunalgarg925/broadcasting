@@ -1,5 +1,5 @@
 # Use Maven image to build the project
-FROM maven:3.9.5-openjdk-21 AS build
+FROM jelastic/maven:3.9.5-openjdk-21 AS build
 
 # Set the working directory inside the container
 WORKDIR /app
